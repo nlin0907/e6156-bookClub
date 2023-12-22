@@ -24,7 +24,7 @@ def lambda_handler(event, context):
         body = "You have deleted " + message["bookclub_name"] + "."
     elif message['eventType'] == "addMembers":
         subject = "Welcome to " + message["bookclub_name"]
-        body = "You have been added to " + message["bookclub_name"] + "."
+        body = "You have been added to " + message["bookclub_name"] + "!"
         
     sender = "sahil.mahendrakar@gmail.com"
     recipients = message['recipient_emails']
